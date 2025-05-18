@@ -35,6 +35,6 @@ public class Compra implements Comparable<Compra> {
 
     @Override
     public int compareTo(Compra outraCompra) {
-        return Double.compare(this.getValor(), outraCompra.getValor());
+        return Double.compare(outraCompra.getValor(),this.getValor());
     }
 }

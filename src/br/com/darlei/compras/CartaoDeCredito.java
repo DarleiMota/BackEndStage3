@@ -40,7 +40,7 @@ public class CartaoDeCredito {
 
     public void exibirCompras() {
         Collections.sort(compras);
-        System.out.println("Compras realizadas:");
+        System.out.println("COMPRAS REALIZADAS:");
 
         for (Compra compra : compras) {
             System.out.printf("%s - R$ %.2f%n", compra.getDescricao(), compra.getValor());

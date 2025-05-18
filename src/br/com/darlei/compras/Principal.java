@@ -1,3 +1,15 @@
+/*
+Desafio: Aplicação de Compras com Cartão de Crédito
+
+Desenvolver uma aplicação que permita ao usuário registrar compras até atingir o limite do cartão de crédito. A aplicação deve incluir as seguintes funcionalidades:
+
+1- Solicitar ao usuário o limite do cartão de crédito.
+2- Permitir que o usuário insira a descrição e o valor de cada compra.
+3- Verificar se o saldo disponível é suficiente para a compra. Se não for, exibir uma mensagem de saldo insuficiente.
+4- Exibir a lista de compras realizadas ao final, ordenada por valor, e mostrar o saldo restante do cartão.
+ */
+
+
 package br.com.darlei.compras;
 
 import java.util.Scanner;
@@ -50,7 +62,6 @@ public class Principal {
         } while (opcao != 0);
 
         System.out.println("\n***********************");
-        System.out.println("COMPRAS REALIZADAS:");
         cartao.exibirCompras();
         System.out.println("\n***********************");
 
