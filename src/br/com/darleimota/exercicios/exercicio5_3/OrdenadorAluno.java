@@ -1,12 +1,13 @@
 package br.com.darleimota.exercicios.exercicio5_3;
 
+import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
 public class OrdenadorAluno {
 
     public static void ordenarPorNotaCrescente(List<Aluno> alunos){
-        alunos.sort(Comparator.comparing(Aluno::getNota));
+        Collections.sort(alunos);
     }
 
     public static void ordenarPorNotaDecrescente(List<Aluno> alunos){
@@ -22,5 +23,4 @@ public class OrdenadorAluno {
             System.out.println(aluno);
         }
     }
-
 }
