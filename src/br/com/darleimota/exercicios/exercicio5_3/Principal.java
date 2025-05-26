@@ -1,0 +1,55 @@
+package br.com.darleimota.exercicios.exercicio5_3;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class Principal {
+    public static void main(String[] args) {
+        List<Aluno> alunos = new ArrayList<>();
+
+        alunos.add(new Aluno("Darlei", 9.0));
+        alunos.add(new Aluno("Julia", 7.0));
+        alunos.add(new Aluno("Mariana", 8.0));
+        alunos.add(new Aluno("João", 7.5));
+        alunos.add(new Aluno("Maria", 9.0));
+        alunos.add(new Aluno("Carlos", 6.0));
+        alunos.add(new Aluno("Ana", 8.3));
+
+        Scanner scanner = new Scanner(System.in);
+        int opcao;
+
+        do {
+            System.out.println("\nEscolha a ordenação:");
+            System.out.println("1- Nota Crescente");
+            System.out.println("2- Nota Decrescente");
+            System.out.println("3- Nome (A-Z)");
+            System.out.println("0- Sair");
+            System.out.print("Opção: ");
+
+            opcao = scanner.nextInt();
+            scanner.nextLine();
+
+            switch (opcao) {
+                case 1 -> {
+                    OrdenadorAluno.ordenarPorNotaCrescente(alunos);
+                    System.out.println("\n=== Alunos ordenados por Nota Crescente ===");
+                }
+                case 2 -> {
+                    OrdenadorAluno.ordenarPorNotaDecrescente(alunos);
+                    System.out.println("\n=== Alunos ordenados por Nota Decrescente ===");
+                }
+                case 3 -> {
+                    OrdenadorAluno.ordenarPorNome(alunos);
+                    System.out.println("\n=== Alunos ordenados por Nome ===");
+                }
+                case 0 -> System.out.println("Sistema encerrado!!!");
+                default -> System.out.println("Opção invalida, digite um numero valido");
+            }
+            if (opcao >= 1 && opcao <= 3) {
+                alunos.forEach(System.out::println);
+            }
+        } while (opcao != 0);
+        scanner.close();
+    }
+}
