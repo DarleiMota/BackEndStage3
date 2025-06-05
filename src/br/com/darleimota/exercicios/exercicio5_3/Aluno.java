@@ -21,12 +21,12 @@ public class Aluno implements Comparable<Aluno> {
     // Comparação com nota de Aluno
     @Override
     public int compareTo(Aluno outro) {
-        return Double.compare(this.nota, outro.nota); // ordena por nota crescente
+        return Double.compare(this.getNota(), outro.getNota()); // ordena por nota crescente
     }
 
     @Override
     public String toString() {
-        return String.format("Nome: %-10s | Nota: %.1f", nome, nota);
+        return String.format("Nome: %-10s | Nota: %.1f", getNome(), getNota());
     }
 }
 
