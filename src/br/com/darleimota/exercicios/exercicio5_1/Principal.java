@@ -1,3 +1,12 @@
+/*
+Exercício 1 — Uso de Map e HashMap (OK)
+Objetivo: Criar um sistema simples que armazena o estoque de produtos usando HashMap<String, Integer>, onde a chave é o nome do produto e o valor a quantidade em estoque.
+- Implemente métodos para adicionar produtos, atualizar quantidade e exibir todos os produtos.
+- Exiba o estoque em ordem alfabética dos produtos usando TreeMap.
+
+*/
+
+
 package br.com.darleimota.exercicios.exercicio5_1;
 
 import java.util.ArrayList;

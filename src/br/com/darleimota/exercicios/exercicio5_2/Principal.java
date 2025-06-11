@@ -1,3 +1,12 @@
+/*
+ Exercício 2 — Uso de Set e HashSet  (OK)
+Objetivo: Crie um programa que receba uma lista de nomes com possíveis repetições e armazene-os em um HashSet para eliminar duplicatas.
+- Depois, imprima a lista ordenada alfabeticamente.
+- Use TreeSet para a ordenação automática.
+
+*/
+
+
 package br.com.darleimota.exercicios.exercicio5_2;
 
 import java.util.Map;

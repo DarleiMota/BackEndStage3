@@ -1,3 +1,17 @@
+/*
+Exercício 3 — Implementando Comparable (OK)
+Objetivo: Crie uma classe Aluno com atributos nome e nota.
+- Implemente a interface Comparable<Aluno> para ordenar alunos por nota crescente.
+- Teste a ordenação com uma lista de alunos e imprima o resultado.
+
+Exercício 4 — Ordenação com Collections.sort e Streams
+Objetivo: Use a classe Aluno do exercício anterior.
+- Ordene a lista de alunos por nome usando Collections.sort com um Comparator.
+- Ordene a lista por nota usando Streams e imprima a lista.
+
+*/
+
+
 package br.com.darleimota.exercicios.exercicio5_3;
 
 import java.util.ArrayList;

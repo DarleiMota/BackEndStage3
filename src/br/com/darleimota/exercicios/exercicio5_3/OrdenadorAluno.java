@@ -35,5 +35,4 @@ public class OrdenadorAluno {
                 .sorted(Comparator.comparing(Aluno::getNota).reversed())
                 .forEach(System.out::println);
     }
-
 }
