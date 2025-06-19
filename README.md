@@ -39,7 +39,8 @@ Nesta etapa, os estudos avançam no domínio de **Collections**, **Streams**, **
 │   └── 📦 exercicio5_3
 ├── README.md
 
-📌 Exercícios organizados por pacotes, agrupando conceitos semelhantes.
+📌 Exercícios organizados agrupando 
+conceitos semelhantes.
 ```
 </td>
 <td>
